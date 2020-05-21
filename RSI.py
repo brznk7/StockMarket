@@ -8,7 +8,6 @@ Created on Tue May 12 21:12:00 2020
 def RSI(Data,StockName,Period):
     import numpy as np
     Closes = np.array(Data[StockName]['Close'])
-#    Closes = np.flip(Closes)
     ## Up & Down
     Up = np.zeros((Closes.size,1))
     Down = np.zeros((Closes.size,1))

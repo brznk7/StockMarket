@@ -12,7 +12,7 @@ def CollectApi():
     
     headers = {
         'content-type': "application/json",
-        'authorization': "apikey 2soHEV9Ld5yBn0Kmvkk2yz:0AuleD7TD8kYUqnwb6FOfH"
+        'authorization': "apikey bla-bla"
         }
     
     conn.request("GET", "/economy/hisseSenedi", headers=headers)

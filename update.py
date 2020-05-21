@@ -10,8 +10,8 @@ import datetime as dt
 import pandas as pnd
 
 
-CompanyNames = pnd.read_pickle(r'C:\Users\SAFA\Documents\GitHub\StockMarket\CollectApi\CompanyNames.pkl')
-OldData = pnd.read_pickle(r'C:\Users\SAFA\Documents\GitHub\StockMarket\CollectApi\CompanyData.pkl')
+CompanyNames = pnd.read_pickle('CompanyNames.pkl')
+OldData = pnd.read_pickle('CompanyData.pkl')
 
 start = dt.datetime(2020,5,13)
 end = dt.date.today()

@@ -39,6 +39,4 @@ for StockName in StockNames:
         plt.gcf().autofmt_xdate()
         plt.title(StockName)
 
-#from RSIgit import rsiFunc
-#RsiGit = rsiFunc(Data[StockName]['Close'],Period)
-#ax1.plot(Time,RsiGit)
+
