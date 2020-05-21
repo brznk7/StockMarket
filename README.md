@@ -1,3 +1,3 @@
 # StockMarket
 
-to plot most recent data run the update.py file.
+In order to plot most recent data, run the update.py file.
