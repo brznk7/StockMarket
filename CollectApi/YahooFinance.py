@@ -5,12 +5,9 @@ Created on Tue May 12 19:38:23 2020
 @author: safa
 """
 
-def yahoo(start,end):
-    import pandas as pnd
+def yahoo(start,end,CompanyNames):
     import pandas_datareader.data as web
     import time
-    
-    CompanyNames = pnd.read_pickle(r'C:\Users\SAFA\Desktop\CollectApi\CollectApi\CompanyNames.pkl')
     
     CompanyData = dict()
     for name in CompanyNames:

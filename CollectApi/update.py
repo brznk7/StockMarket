@@ -9,12 +9,14 @@ from YahooFinance import yahoo
 import datetime as dt
 import pandas as pnd
 
-OldData = pnd.read_pickle(r'C:\Users\SAFA\Desktop\CollectApi\CollectApi\CompanyData.pkl')
+
+CompanyNames = pnd.read_pickle(r'C:\Users\SAFA\Documents\GitHub\StockMarket\CollectApi\CompanyNames.pkl')
+OldData = pnd.read_pickle(r'C:\Users\SAFA\Documents\GitHub\StockMarket\CollectApi\CompanyData.pkl')
 
 start = dt.datetime(2020,5,13)
 end = dt.date.today()
 
-CurrentData = yahoo(start,end)
+CurrentData = yahoo(start,end,CompanyNames)
 
 UpdatedData = dict()
 for key in list(CurrentData.keys()):
